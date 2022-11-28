@@ -5,7 +5,7 @@
     <div class="col-md-4 mt-4" v-for="stock in stocks" :key="stock.name">
       <div class="card">
         <div class="card-body">
-          <td>{{ stock.name }}</td>
+          {{ stock.name }}
           <span
             :class="{
               down: stock.price < stock.previousPrice,
